@@ -79,7 +79,6 @@ main img {
 }
 .disabled {
   background-color: var(--grayishBlue);
-  cursor: wait;
 }
 .disabled:hover {
   animation: none;

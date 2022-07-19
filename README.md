@@ -41,11 +41,14 @@ Your users should be able to:
 ### Built with
 
 - HTML5
-- CSS (Less).
+- CSS (Less)
+- Vanilla JS
 
 ### What I learned
 
-Coming soon
+It's the second time I'm using an API, but it's the first time I'm doing it with vanillaJS. I had to find a code, because the API subject is still obscure to me.
+According to the API use guide, we have to wait two seconds to get a new piece of advice. So I added an animations for making the user wait this amount of time before being allowed to click the button again.
+I used the HTML "picture" again (the first time was in the FAQ accordion). That's a really cool tag!
 
 ## Author
 

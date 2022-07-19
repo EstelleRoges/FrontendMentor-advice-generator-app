@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 a {
   color: var(--lightCyan);
@@ -53,6 +54,7 @@ main .quote:after {
   content: '"';
 }
 main picture {
+  margin: auto;
   margin-bottom: 3em;
 }
 main button {
@@ -102,5 +104,15 @@ main img {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 430px) {
+  picture {
+    display: none;
   }
 }

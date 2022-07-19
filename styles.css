@@ -108,7 +108,7 @@ main img {
 }
 @media screen and (max-width: 768px) {
   main {
-    width: 85%;
+    width: 95%;
   }
 }
 @media screen and (max-width: 430px) {

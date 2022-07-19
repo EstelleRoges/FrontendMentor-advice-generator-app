@@ -1,0 +1,107 @@
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+  --fontSizeQuote: 28px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--darkBlue);
+  font-family: "Manrope", cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  color: var(--lightCyan);
+  text-decoration: none;
+}
+main {
+  margin: auto;
+  width: auto;
+  max-width: 550px;
+  padding: 2em;
+  background-color: var(--darkGrayishBlue);
+  border-radius: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main p {
+  color: var(--neonGreen);
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+main .quote {
+  color: var(--lightCyan);
+  font-size: var(--fontSizeQuote);
+  font-weight: 800;
+  text-align: center;
+}
+main .quote::before {
+  content: '"';
+}
+main .quote:after {
+  content: '"';
+}
+main picture {
+  margin-bottom: 3em;
+}
+main button {
+  margin: 0;
+  padding: 0;
+  width: 65px;
+  height: 65px;
+  border: none;
+  display: flex;
+  align-content: center;
+  border-radius: 50%;
+  background-color: var(--neonGreen);
+  cursor: pointer;
+  transition: 0.3s all;
+  position: absolute;
+  bottom: -33px;
+}
+main button:hover {
+  box-shadow: 0 0 30px var(--neonGreen);
+  animation: diceSpin 1s ease-in-out;
+}
+main img {
+  margin: auto;
+}
+.disabled {
+  background-color: var(--grayishBlue);
+  cursor: wait;
+}
+.disabled:hover {
+  animation: none;
+  box-shadow: 0 0 30px var(--grayishBlue);
+}
+.fadeIn {
+  animation: fade 0.7s 0s both;
+}
+.attribution {
+  margin: 2em;
+  color: var(--grayishBlue);
+}
+@keyframes diceSpin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

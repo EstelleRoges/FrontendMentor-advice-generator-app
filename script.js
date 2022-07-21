@@ -4,7 +4,6 @@ let adviceId = document.getElementById("adviceId");
 
     const fetchAdvice = () => {
     const random = Math.floor(Math.random() * 200);
-    console.log(random);
       fetch(`https://api.adviceslip.com/advice/${random}`).then(function (response) {
         return response.json();
       }).then(function (data) {

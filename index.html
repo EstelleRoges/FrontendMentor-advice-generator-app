@@ -34,38 +34,7 @@
     Coded by <a href="https://www.frontendmentor.io/profile/EstelleRoges">EstelleR</a>.
   </footer>
 
-  <script>
-    let adviceId = document.getElementById("adviceId");
-    let advice = document.getElementById("advice");
-    let button = document.getElementById("adviceButton");
-
-    const fetchAdvice = () => {
-      fetch("https://api.adviceslip.com/advice").then(function (response) {
-        return response.json();
-      }).then(function (data) {
-        adviceId.innerHTML = data.slip.id;
-        advice.innerText = data.slip.advice;
-        advice.classList.add("fadeIn");
-        
-        button.addEventListener('click', function() {
-          button.classList.add("disabled");
-        });
-
-        setTimeout(function() {
-          advice.classList.remove("fadeIn");
-        }, 800);
-
-        setTimeout(function() {
-          button.classList.remove("disabled");
-          button.style.cursor = "pointer";
-        }, 2000);
-
-      }).catch(function (error) {
-        console.warn("Failed to get an advice", error);
-      });
-    }
-
-  </script>
+<script src="script.js"></script>
 </body>
 
 </html>

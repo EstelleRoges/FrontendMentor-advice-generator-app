@@ -83,8 +83,8 @@ main img {
   background-color: var(--grayishBlue);
 }
 .disabled:hover {
-  animation: none;
   box-shadow: 0 0 30px var(--grayishBlue);
+  animation: none;
 }
 .fadeIn {
   animation: fade 0.7s 0s both;
@@ -108,7 +108,7 @@ main img {
 }
 @media screen and (max-width: 768px) {
   main {
-    width: 95%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 430px) {

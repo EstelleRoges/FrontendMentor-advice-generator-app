@@ -35,7 +35,6 @@ Your users should be able to:
 
 - Solution URL: https://www.frontendmentor.io/solutions/advice-generator-app-html-css-less-vanilla-js-VUtjbGXU6W
 - Live Site URL: https://esteller-frontendmentor-advice-generator-app.netlify.app/
-## My process
 
 ### Built with
 
